@@ -1,0 +1,19 @@
+:root { --paper: #FBFAF7; --ink: #211F1C; --muted: #6E6862; --accent: #CC4519; --card: #FFFFFF; --line: #E7E2D9; }
+@media (prefers-color-scheme: dark) { :root { --paper: #131314; --ink: #E6E3DC; --muted: #9C968E; --accent: #FF8C54; --card: #1D1D1F; --line: #2C2B2A; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 "New York", "Iowan Old Style", Georgia, serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+h1 { font-size: 2.2em; line-height: 1.15; margin: 0.4em 0 0.3em; }
+h2 { font-size: 1.2em; margin: 1.8em 0 0.4em; }
+p, li { color: var(--ink); }
+.meta, .muted { color: var(--muted); font-family: -apple-system, system-ui, sans-serif; font-size: 0.9em; }
+a { color: var(--accent); }
+.back { font-family: -apple-system, system-ui, sans-serif; text-decoration: none; font-size: 0.95em; }
+.hero { text-align: center; }
+.hero img { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.18); }
+.tagline { font-size: 1.2em; color: var(--muted); margin-top: 0; }
+.cards { display: grid; gap: 12px; margin: 32px 0; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+.card b { display: block; }
+nav { font-family: -apple-system, system-ui, sans-serif; display: flex; gap: 18px; justify-content: center; margin-top: 28px; font-size: 0.95em; }
+code { font-family: ui-monospace, Menlo, monospace; font-size: 0.88em; }
